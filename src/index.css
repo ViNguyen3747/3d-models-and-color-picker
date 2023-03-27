@@ -33,10 +33,21 @@ input {
 input::-webkit-color-swatch {
   border-radius: 8px;
   border: 3px solid white;
+  transition: all 0.08s ease-in-out;
+}
+
+input:hover::-webkit-color-swatch {
+  border: 3px solid #d2d1d1;
+  border-radius: 2px;
 }
 input::-moz-color-swatch {
   border-radius: 8px;
   border: 3px solid white;
+  transition: all 0.08s ease-in-out;
+}
+input:hover::-moz-color-swatch {
+  border: 3px solid #d2d1d1;
+  border-radius: 2px;
 }
 canvas {
   width: 100%;
