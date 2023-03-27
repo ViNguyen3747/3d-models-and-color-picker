@@ -75,7 +75,7 @@ function App() {
           Vi Nguyen
         </a>
       </div>
-      <Canvas>
+      <Canvas camera={{ fov: 45, position: [-80, -50, 80] }}>
         <EffectComposer>
           <Bloom intensity={0.5} />
         </EffectComposer>

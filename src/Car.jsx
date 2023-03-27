@@ -2,9 +2,8 @@ import { useGLTF, Center } from "@react-three/drei";
 
 export default ({ colors }) => {
   const { nodes } = useGLTF("./car.glb");
-  console.log(nodes);
   return (
-    <Center scale={0.4} position={[0, -1, 0]} rotation={[0, Math.PI / 3, 0]}>
+    <Center scale={0.4} position={[0, -1, 0]}>
       <mesh
         geometry={nodes.light1.geometry}
         material={nodes.light1.material}
@@ -75,3 +74,4 @@ export default ({ colors }) => {
     </Center>
   );
 };
+useGLTF.preload("./car.glb");
