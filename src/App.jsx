@@ -10,10 +10,11 @@ function App() {
     color2: "#df94a7",
     color3: "#ffb703",
     color4: "#000000",
-    tire: "#d64c33",
+    color5: "#eb5e28",
     crater1: "#783d20",
     crater2: "#d64c33",
     top: "#947c85",
+    tire: "#0a0908",
   });
   return (
     <>
@@ -48,9 +49,9 @@ function App() {
         />
         <input
           type="color"
-          value={colors.tire}
+          value={colors.color5}
           onChange={(newColor) =>
-            setColors({ ...colors, tire: newColor.target.value })
+            setColors({ ...colors, color5: newColor.target.value })
           }
         />
         <input
@@ -84,7 +85,7 @@ function App() {
           maxDistance={8}
         />
         <ambientLight intensity={0.4} />
-        <directionalLight position={[1, 2, 3]} intensity={1} />
+        <directionalLight position={[0, 2, 2]} intensity={1} />
         <Car colors={colors} />
       </Canvas>
     </>

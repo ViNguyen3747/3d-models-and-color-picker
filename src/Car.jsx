@@ -2,6 +2,7 @@ import { useGLTF, Center } from "@react-three/drei";
 
 export default ({ colors }) => {
   const { nodes } = useGLTF("./car.glb");
+  console.log(nodes);
   return (
     <Center scale={0.4} position={[0, -1, 0]} rotation={[0, Math.PI / 3, 0]}>
       <mesh
@@ -26,47 +27,47 @@ export default ({ colors }) => {
       <mesh geometry={nodes.color3.geometry}>
         <meshStandardMaterial color={colors.color3} />
       </mesh>
-      <mesh geometry={nodes.black.geometry}>
+      <mesh geometry={nodes.color4.geometry}>
         <meshStandardMaterial color={colors.color4} />
       </mesh>
       <mesh geometry={nodes.window.geometry}>
         <meshStandardMaterial color={"#000000"} />
       </mesh>
       <mesh geometry={nodes.tire10.geometry}>
-        <meshStandardMaterial color={"#000000"} />
+        <meshStandardMaterial color={colors.tire} />
       </mesh>
       <mesh geometry={nodes.tire11.geometry}>
-        <meshStandardMaterial color={colors.tire} />
+        <meshStandardMaterial color={colors.color5} />
       </mesh>
       <mesh geometry={nodes.tire20.geometry}>
-        <meshStandardMaterial color={"#000000"} />
+        <meshStandardMaterial color={colors.tire} />
       </mesh>
       <mesh geometry={nodes.tire21.geometry}>
-        <meshStandardMaterial color={colors.tire} />
+        <meshStandardMaterial color={colors.color5} />
       </mesh>
       <mesh geometry={nodes.tire30.geometry}>
-        <meshStandardMaterial color={"#000000"} />
+        <meshStandardMaterial color={colors.tire} />
       </mesh>
       <mesh geometry={nodes.tire31.geometry}>
-        <meshStandardMaterial color={colors.tire} />
+        <meshStandardMaterial color={colors.color5} />
       </mesh>
       <mesh geometry={nodes.tire40.geometry}>
-        <meshStandardMaterial color={"#000000"} />
+        <meshStandardMaterial color={colors.tire} />
       </mesh>
       <mesh geometry={nodes.tire41.geometry}>
-        <meshStandardMaterial color={colors.tire} />
+        <meshStandardMaterial color={colors.color5} />
       </mesh>
       <mesh geometry={nodes.tire50.geometry}>
-        <meshStandardMaterial color={"#000000"} />
+        <meshStandardMaterial color={colors.tire} />
       </mesh>
       <mesh geometry={nodes.tire51.geometry}>
-        <meshStandardMaterial color={colors.tire} />
+        <meshStandardMaterial color={colors.color5} />
       </mesh>
       <mesh geometry={nodes.crater1.geometry}>
         <meshStandardMaterial color={colors.crater1} />
       </mesh>
       <mesh geometry={nodes.crater2.geometry}>
-        <meshStandardMaterial color={colors.tire} />
+        <meshStandardMaterial color={colors.color5} />
       </mesh>
       <mesh geometry={nodes.top.geometry}>
         <meshStandardMaterial color={colors.top} />
